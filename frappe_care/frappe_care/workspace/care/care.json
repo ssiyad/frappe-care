@@ -1,0 +1,38 @@
+{
+ "charts": [
+  {
+   "chart_name": "Child Count",
+   "label": "Child Count"
+  }
+ ],
+ "content": "[{\"id\":\"5U6b3agZGx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Care</span>\",\"col\":12}}]",
+ "creation": "2023-01-30 00:24:16.648096",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Care",
+ "links": [],
+ "modified": "2023-01-30 00:26:25.806795",
+ "modified_by": "Administrator",
+ "module": "Frappe Care",
+ "name": "Care",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "View Children",
+   "link_to": "Child",
+   "type": "DocType"
+  }
+ ],
+ "title": "Care"
+}
