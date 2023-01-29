@@ -5,7 +5,7 @@
    "label": "Child Count"
   }
  ],
- "content": "[{\"id\":\"5U6b3agZGx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Care</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"5U6b3agZGx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Care</span>\",\"col\":12}},{\"id\":\"dFRkJx-I3d\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Child Count\",\"col\":12}},{\"id\":\"SttcgFnmR6\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Manage Children\",\"col\":4}}]",
  "creation": "2023-01-30 00:24:16.648096",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -16,23 +16,21 @@
  "is_hidden": 0,
  "label": "Care",
  "links": [],
- "modified": "2023-01-30 00:26:25.806795",
+ "modified": "2023-01-30 00:46:53.298514",
  "modified_by": "Administrator",
  "module": "Frappe Care",
  "name": "Care",
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
- "roles": [],
- "sequence_id": 1.0,
- "shortcuts": [
+ "quick_lists": [
   {
-   "doc_view": "",
-   "label": "View Children",
-   "link_to": "Child",
-   "type": "DocType"
+   "document_type": "Child",
+   "label": "Manage Children"
   }
  ],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
  "title": "Care"
 }

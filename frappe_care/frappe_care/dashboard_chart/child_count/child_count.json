@@ -13,7 +13,7 @@
  "idx": 0,
  "is_public": 1,
  "is_standard": 1,
- "modified": "2023-01-30 00:20:39.720057",
+ "modified": "2023-01-30 00:36:39.162440",
  "modified_by": "Administrator",
  "module": "Frappe Care",
  "name": "Child Count",
@@ -25,7 +25,7 @@
  "time_interval": "Monthly",
  "timeseries": 1,
  "timespan": "Last Year",
- "type": "Bar",
+ "type": "Line",
  "use_report_chart": 0,
  "value_based_on": "",
  "y_axis": []
