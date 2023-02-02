@@ -10,6 +10,25 @@
   "basic_details_tab",
   "child_name",
   "photo",
+  "gender",
+  "section_break_ruel",
+  "date_of_birth",
+  "age",
+  "contact_section",
+  "mothers_name",
+  "fathers_name",
+  "column_break_xfmq",
+  "guardians_name",
+  "contact_number",
+  "additional_information_tab",
+  "religion",
+  "caste",
+  "column_break_boel",
+  "social_class",
+  "economic_status",
+  "section_break_cmfo",
+  "educational_status",
+  "column_break_spvx",
   "address_tab",
   "address_line_1",
   "address_line_2",
@@ -17,7 +36,12 @@
   "column_break_ogyc",
   "country",
   "state",
-  "district"
+  "district",
+  "documents_tab",
+  "aadhaar_number",
+  "aadhaar_photo",
+  "udid_number",
+  "cwc_order_number"
  ],
  "fields": [
   {
@@ -65,10 +89,10 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "India",
    "fieldname": "country",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Country",
+   "options": "Country",
    "reqd": 1
   },
   {
@@ -83,12 +107,140 @@
    "fieldtype": "Data",
    "label": "District",
    "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nNon-binary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ruel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "mothers_name",
+   "fieldtype": "Data",
+   "label": "Mother's name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xfmq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guardians_name",
+   "fieldtype": "Data",
+   "label": "Guardian's name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "caste",
+   "fieldtype": "Data",
+   "label": "Caste"
+  },
+  {
+   "fieldname": "column_break_boel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "social_class",
+   "fieldtype": "Select",
+   "label": "Social Class",
+   "options": "\nGeneral\nOBC\nSC\nST"
+  },
+  {
+   "fieldname": "economic_status",
+   "fieldtype": "Select",
+   "label": "Economic Status",
+   "options": "\nBPL\nAPL\nNon-priority"
+  },
+  {
+   "fieldname": "educational_status",
+   "fieldtype": "Select",
+   "label": "Educational Status",
+   "options": "\nStudying\nIlliterate\nDropped Out\nPrimary\nSecondary\nHigher Secondary\nOther"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "aadhaar_number",
+   "fieldtype": "Data",
+   "label": "Aadhaar (Number)"
+  },
+  {
+   "fieldname": "aadhaar_photo",
+   "fieldtype": "Attach Image",
+   "label": "Aadhaar (Photo)"
+  },
+  {
+   "fieldname": "udid_number",
+   "fieldtype": "Data",
+   "label": "UDID (Number)"
+  },
+  {
+   "fieldname": "cwc_order_number",
+   "fieldtype": "Data",
+   "label": "CWC Order (Number)"
+  },
+  {
+   "fieldname": "section_break_cmfo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_spvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Age",
+   "options": "(frappe.utils.now_datetime().date() - doc.date_of_birth).days // 365"
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-30 00:32:09.740417",
+ "modified": "2023-02-03 01:56:26.374784",
  "modified_by": "Administrator",
  "module": "Frappe Care",
  "name": "Child",
